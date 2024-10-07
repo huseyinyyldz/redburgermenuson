@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Adı</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <!-- google font -->
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="restoran-adi">Red Burger</div>
+        <div class="menu-toggle" id="menuToggle">Menü</div>
+    </header>
+
+    <aside class="menu-bar" id="menuBar">
+        <nav>
+            <ul id="menu" class="menu">
+                <li><a href="#kategori1">RED CHICK (TAVUK) BURGERLER</a></li>
+                <li><a href="#kategori2">RED MEAT (ET ) BURGERLER</a></li>
+                <li><a href="#kategori3">ROLL(DÜRÜM) MENÜLER</a></li>
+                <li><a href="#kategori4">BASKET (SEPET) MENÜLER</a></li>
+                <li><a href="#kategori5">MEGA STİCK BUCKET MENÜ</a></li>
+                <li><a href="#kategori6">SEPETİNİ OLUŞTUR</a></li>
+                <li><a href="#kategori7">MAKARNA MENÜLERİ</a></li>
+                <li><a href="#kategori8">SOSLAR</a></li>
+                <li><a href="#kategori9">EXTRA</a></li>
+                <li><a href="#kategori10">TATLILAR</a></li>
+                <li><a href="#kategori11">KAHVELER</a></li>
+                <li><a href="#kategori12">ÇAYLAR</a></li>
+                <li><a href="#kategori13">MEŞRUBATLAR</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="slider-wrapper">
+        <div class="slider" id="imageSlider">
+            <div class="slide">
+                <img src="../burgerler/1.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+        
+            <div class="slide">
+                <img src="../burgerler/2.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/3.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/4.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/5.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/6.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/7.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/8.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/9.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/10.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/11.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/12.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/13.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/14.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/15.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/16.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <main>
+        <section id="kategori1" class="kategori">
+            <h2>RED CHICK (TAVUK) BURGERLER</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/burgerler/1.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Chickball Burger</h3>
+                        <p>Burger(120 gr. Tavuk kıymasıyla yapılmış özel köftesi, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">169 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/burgerler/2.jpg" alt="Ürün 2" class="card-img">
+                    <div class="content">
+                        <h3>Red Chick Mix Special</h3>
+                        <p>Classic Red Chick Burger, 3 adet kemiksiz chicken stick (100 gr.), 150 gr., 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">249 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/burgerler/3.jpg" alt="Ürün 3" class="card-img">
+                    <div class="content">
+                        <h3>Red Chick Classic</h3>
+                        <p>Burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">219 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/burgerler/4.jpg" alt="Ürün 4" class="card-img">
+                    <div class="content">
+                        <h3>BBQ Chick Classic</h3>
+                        <p>Barbekü soslu burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, bbq sos, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">225 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/burgerler/5.jpg" alt="Ürün 5" class="card-img">
+                    <div class="content">
+                        <h3>Sweet Chick Classic</h3>
+                        <p>Sweet chili soslu burger (110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, sweet chili sos,red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">225 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/burgerler/6.jpg" alt="Hot Chick Classic" class="card-img">
+                    <div class="content">
+                        <h3>Hot Chick Classic</h3>
+                        <p>Acılı burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, acı sos, red burger sos), 150 gr. özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">215 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/burgerler/7.jpg" alt="Cheese Chick Classic" class="card-img">
+                    <div class="content">
+                        <h3>Cheese Chick Classic</h3>
+                        <p>Peynirli burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, kaşar peyniri, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos set</p>
+                        <p class="fiyat">235 ₺</p>
+                    </div>
+                </div>
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori2" class="kategori">
+            <h2>RED MEAT (ET ) BURGERLER</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../burgerler/8.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>Red Meat Classic Burger</h3>
+                        <p>Burger(120 gr. Ev yapımı burger köfte, ıceberg, domates, turşu, mayonez, red burger sos, cheedar sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">274 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/9.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>Hot Meat Burger</h3>
+                        <p>Acılı burger(120 gr. Ev yapımı burger köfte, ıceberg, domates, turşu, mayonez, red burger sos ,cheedar sos ), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">279 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/10.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>BBQ Meat Burger</h3>
+                        <p>Barbekü soslu burger(120 gr. Ev yapımı burger köfte, ıceberg, domates, turşu, mayonez, red burger sos, cheedar sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">279 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/11.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>Sweet Meat Burger</h3>
+                        <p>Sweet chili soslu burger (120 gr. Ev yapımı burger köfte, ıceberg, domates, turşu, mayonez, red burger sos, cheedar sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">279 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/12.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>Mush Meat Burger</h3>
+                        <p>Mantarlı burger (120 gr. Ev yapımıburger köfte, ıceberg, domates, turşu, mayonez, red burger sos, cheedar sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">289 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/13.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>Cheese Meat Burger</h3>
+                        <p>Peynirli  burger (120 gr. Ev yapım ıburger köfte, ıceberg, domates, turşu, mayonez, kaşar peyniri, red burger sos, cheedar sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">289 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/12.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>Succuk’ Burger</h3>
+                        <p>Sucuk burger(100gr. %100 dana sucuk, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">269 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/12.jpg" alt="Red Meat Classic Burger" class="card-img">
+                    <div class="content">
+                        <h3>Double Meat Burger(x2 Köfte)</h3>
+                        <p>Burger(240 gr. Ev yapımı burger köftesi ıceberg, domates, turşu, mayonez, red burger sos, cheedar sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">329 ₺</p>
+                    </div>
+                </div>
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori3" class="kategori">
+            <h2>ROLL(DÜRÜM) MENÜLER</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/1.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Roll Classic Dürüm</h3>
+                        <p>Tandır lavaşında dürüm (130 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">209 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/2.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Roll Hot Dürüm</h3>
+                        <p>Tandır lavaşında dürüm (130 gr. cajun baharatlı acılı tavuk, ıceberg, domates, turşu, mayonez,acı sos, red burger sos), 150 gr. özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">209 ₺</p>
+                    </div>
+                </div>
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori4" class="kategori">
+            <h2>BASKET (SEPET) MENÜLER</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/1.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Stick Basket Menü</h3>
+                        <p>7 adet kemiksiz chicken stick (220 gr.), 1 adet tandır lavaşı, 150 gr. Özel baharatlı patates kızartması, Stick sos seti</p>
+                        <p class="fiyat">250 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/2.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>But Basket Menü</h3>
+                        <p>T7 adet kemikli kök kanat but (400 gr.), 1 adet tandır lavaşı, 150 gr. Özel baharatlı patates kızartması, Stick sos seti</p>
+                        <p class="fiyat">255 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/3.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Wing Basket Menü</h3>
+                        <p>7 adet kemikli uç kanat (300 gr.), 1 adet tandır lavaşı, 150 gr. Özel baharatlı patates kızartması, stick Sos seti</p>
+                        <p class="fiyat">255 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/4.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mix Stick Basket Menü</h3>
+                        <p>7 adet kemiksiz chicken stick (220 gr.),2 adet soğan halkası, 2 adet çıtır mantar, 2 adet peynir çubuğu), 1 adet tandır lavaşı, 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">299 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/5.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mix But Basket Menü</h3>
+                        <p>7 adet kemikli kök kanat but (400 gr.), 1 adet tandır lavaşı, 2 adet soğan halkası, 2 adet çıtır mantar, 2 Adet peynir çubuğu 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">309 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/6.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mix Wing Basket Menü</h3>
+                        <p>7 adet kemikli uç kanat (300 gr.), 1 adet tandır lavaşı, 2 adet soğan halkası, 2 adet çıtır mantar, 2 adet Peynir çubuğu 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">309 ₺</p>
+                    </div>
+                </div>
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori5" class="kategori">
+            <h2>MEGA STİCK BUCKET MENÜ</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/1.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mega Stick Bucket Menü</h3>
+                        <p>Menü 2-3 kişiliktir. 15 adet kemiksiz chicken stick (470 gr.), 2 adet tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">439 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/2.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mega But Bucket Menü</h3>
+                        <p>Menü 2-3 kişiliktir. 15 adet kemikli kök kanat but (850 gr.), 2 adet tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">445 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/3.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mega Wing Bucket Menü</h3>
+                        <p>Menü 2-3 kişiliktir. 15 adet kemikli uç kanat (400 gr.), 2 adet tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">449 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/4.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mıx Bucket Menü</h3>
+                        <p>2-3 kişiliktir. 5 adet kemiksiz chicken stick, 5 adet kemikli kök kanat but, 5 adet kemikli uç kanat(600 gr.) 2 adert tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">459 ₺</p>
+                    </div>
+                </div>
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori6" class="kategori">
+            <h2>SEPETİNİ OLUŞTUR</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Baharatlı patates kızartması</h3>
+                        <p>150 gr. - 300 gr.</p>
+                        <p class="fiyat">70 ₺ - 120 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/12.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Soğan Halkası</h3>
+                        <p>3 adet - 7 adet</p>
+                        <p class="fiyat">44 ₺ - 79 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/11.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Çıtır Mantar</h3>
+                        <p>3 adet - 7 adet</p>
+                        <p class="fiyat">52 ₺ - 89 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/13.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Stick Peynir Çubuğu</h3>
+                        <p>3 adet - 7 adet</p>
+                        <p class="fiyat">78 ₺ - 119 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/14.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cajun Stick Chick</h3>
+                        <p>3 adet - 7 adet</p>
+                        <p class="fiyat">92 ₺ - 164 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/8.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cajun Hot Stick Chick</h3>
+                        <p>3 adet - 7 adet</p>
+                        <p class="fiyat">92 ₺ - 164 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/9.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cajun Kök Kanat</h3>
+                        <p>3 adet - 7 adet</p>
+                        <p class="fiyat">92 ₺ - 168 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/9.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cajun Uç Kanat</h3>
+                        <p>3 adet - 7 adet</p>
+                        <p class="fiyat">92 ₺ - 168 ₺</p>
+                    </div>
+                </div>
+
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori7" class="kategori">
+            <h2>MAKARNA MENÜLERİ</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Napolitenna</h3>
+                        <p>110 gr. Penne makarna, özel domates sos, çeşitli baharat ve sunum sebzesi.</p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/12.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Pestorella</h3>
+                        <p>110 gr. Penne makarna, ev yapımı petso sos, çeşitli baharat ve sunum sebzesi.</p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/11.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Alfredo’s</h3>
+                        <p>110 gr. Penne makarna, 60 gr. tavuk, krema, çeşitli baharat ve sunum sebzesi.</p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/13.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Portobella</h3>
+                        <p>110 gr. Penne makarna, 60 gr. mantar, krema, çeşitli baharat ve sunum sebzesi.</p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/14.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Köri’anto</h3>
+                        <p>110 gr. Penne makarna, köri, 60 gr. Tavuk, krema, çeşitli baharat ve sunum sebzesi.</p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/8.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Vegatableno</h3>
+                        <p>110 gr. Penne makarna, sebzeli sos, çeşitli baharat ve sunum sebzesi.</p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                
+
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori8" class="kategori">
+            <h2>SOSLAR</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Ketçap</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mayonez</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Barbekü</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Ranch</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Ballı Hardal</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Sweet Chili</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Sarımsaklı Mayonez</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cheedar Sos</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Hot Chili Sos</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                
+  
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori9" class="kategori">
+            <h2>EXTRA</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Karamelize Soğan</h3>
+                        <p></p>
+                        <p class="fiyat">10 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>4'lü Stick Sos Paketi</h3>
+                        <p></p>
+                        <p class="fiyat">15 ₺</p>
+                    </div>
+                </div>
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori10" class="kategori">
+            <h2>Tatlılar</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cheesecake</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Tiramisu</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Devil's Pasta</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori11" class="kategori">
+            <h2>KAHVELER</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Espresso</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Americano</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cafea Latte</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Cappuccino</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Mocha</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Macchiato</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Sıcak Çikolata</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori12" class="kategori">
+            <h2>Çaylar</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Demleme Çay</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3>Bitki Çayları</h3>
+                        <p>Ihlamur, Adaçayı, Yeşilçay, Kuşburnu</p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <section id="kategori13" class="kategori">
+            <h2>Meşrubatlar</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 330 ml Kutu İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 330 ml Şişe İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> Sarıyer/Didi 330 ml Kutu İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 200 ml Şişe İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> Ayran</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> Litrelik</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 300 ml El Yapımı Soğuk Limonata</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 500 ml Pet Su</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <!-- Diğer kategoriler -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Şirket Hakkında</h3>
+                <p>Restoranımız, 2024 yılından bu yana en kaliteli ürünleri sunmaktadır. Misyonumuz, müşterilerimize en iyi lezzet deneyimini yaşatmak.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>İletişim</h3>
+
+                <p><a href="https://www.instagram.com/red_burger58/"><i class="fa-brands fa-instagram"></i> İnstagram</a></p>
+                <p><i class="fas fa-envelope"></i> info@restoran.com</p>
+                <p><i class="fas fa-phone-alt"></i> 12:00-23:00 Sipariş: 0532 015 03 58</p>
+                <p><i class="fas fa-map-marker-alt"></i> Hoca Ahmet Yesevi Cad. No:18, Sivas, Türkiye</p>
+            </div>
+            <div class="footer-section copyright">
+                <p>&copy; Red Burger. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome için -->
+    <script src="../script/script.js"></script>
+</body>
+</html>
