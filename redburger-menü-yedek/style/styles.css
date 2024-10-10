@@ -369,6 +369,11 @@ body.loaded #loader {
         top: 10px;
         font-weight: 900;
     }
+    .scroll-to-top {
+        bottom: 15px; /* Mobilde biraz daha yukarıda olabilir */
+        right: 15px; /* Kenara daha yakın olabilir */
+        padding: 8px; /* Mobilde daha küçük olabilir */
+    }
     p{
         font-size: 12px;
     }
@@ -416,6 +421,9 @@ body.loaded #loader {
         width: 170px;
         height: 170px;
         margin-top: 10px;
+    }
+    .kategori {
+        scroll-margin-top: 90px; /* Mobil cihazlarda daha fazla boşluk için */
     }
 }
 

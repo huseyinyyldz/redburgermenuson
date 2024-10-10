@@ -139,3 +139,14 @@ scrollToTopButton.addEventListener('click', function() {
         behavior: 'smooth' // Yumuşak kaydırma efekti için
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollToTopButton = document.getElementById('scrollToTop');
+
+    scrollToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
