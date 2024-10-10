@@ -13,8 +13,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- loader kısmı -->
+    <div id="loader" class="loader">
+        <div class="burger">
+            <div class="bun top"></div>
+            <div class="patty"></div>
+            <div class="bun bottom"></div>
+        </div>
+    </div>
+    <!-- scrool to top -->
+    <div id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
     <header>
-        <div class="restoran-adi">Red Burger</div>
+        <div class="restoran-adi" id="restoranAdi">Red Burger</div>
         <div class="menu-toggle" id="menuToggle">Menü</div>
     </header>
 
@@ -46,19 +59,19 @@
         
             <div class="slide">
                 <img src="../burgerler/2.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
+                <div class="slide-title"> Burger 2</div>
             </div>
             <div class="slide">
                 <img src="../burgerler/3.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
+                <div class="slide-title"> Burger 3</div>
             </div>
             <div class="slide">
                 <img src="../burgerler/4.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
+                <div class="slide-title">Chickball Burger 4</div>
             </div>
             <div class="slide">
                 <img src="../burgerler/5.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
+                <div class="slide-title">Chickball Burger 5</div>
             </div>
             <div class="slide">
                 <img src="../burgerler/6.jpg" alt="Ürün 1">
@@ -117,7 +130,7 @@
             <h2>RED CHICK (TAVUK) BURGERLER</h2>
             <div class="card-container">
                 <div class="card">
-                    <img src="/burgerler/1.jpg" alt="Ürün 1" class="card-img">
+                    <img src="../burgerler/1.jpg" alt="Ürün 1" class="card-img">
                     <div class="content">
                         <h3>Chickball Burger</h3>
                         <p>Burger(120 gr. Tavuk kıymasıyla yapılmış özel köftesi, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
@@ -125,7 +138,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/burgerler/2.jpg" alt="Ürün 2" class="card-img">
+                    <img src="../burgerler/2.jpg" alt="Ürün 2" class="card-img">
                     <div class="content">
                         <h3>Red Chick Mix Special</h3>
                         <p>Classic Red Chick Burger, 3 adet kemiksiz chicken stick (100 gr.), 150 gr., 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
@@ -133,7 +146,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/burgerler/3.jpg" alt="Ürün 3" class="card-img">
+                    <img src="../burgerler/3.jpg" alt="Ürün 3" class="card-img">
                     <div class="content">
                         <h3>Red Chick Classic</h3>
                         <p>Burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
@@ -141,7 +154,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/burgerler/4.jpg" alt="Ürün 4" class="card-img">
+                    <img src="../burgerler/4.jpg" alt="Ürün 4" class="card-img">
                     <div class="content">
                         <h3>BBQ Chick Classic</h3>
                         <p>Barbekü soslu burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, bbq sos, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
@@ -149,7 +162,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/burgerler/5.jpg" alt="Ürün 5" class="card-img">
+                    <img src="../burgerler/5.jpg" alt="Ürün 5" class="card-img">
                     <div class="content">
                         <h3>Sweet Chick Classic</h3>
                         <p>Sweet chili soslu burger (110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, sweet chili sos,red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
@@ -157,7 +170,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/burgerler/6.jpg" alt="Hot Chick Classic" class="card-img">
+                    <img src="../burgerler/6.jpg" alt="Hot Chick Classic" class="card-img">
                     <div class="content">
                         <h3>Hot Chick Classic</h3>
                         <p>Acılı burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, acı sos, red burger sos), 150 gr. özel baharatlı patates kızartması, stick sos seti</p>
@@ -165,7 +178,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="/burgerler/7.jpg" alt="Cheese Chick Classic" class="card-img">
+                    <img src="../burgerler/7.jpg" alt="Cheese Chick Classic" class="card-img">
                     <div class="content">
                         <h3>Cheese Chick Classic</h3>
                         <p>Peynirli burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, kaşar peyniri, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos set</p>

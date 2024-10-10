@@ -78,6 +78,10 @@ main {
 
 .kategori {
     padding-top: 20px;
+    
+    scroll-margin-top: 60px; /* Üstteki menü yüksekliği kadar ayarlayın */
+    
+    
 }
 
 h2 {
@@ -278,6 +282,81 @@ footer {
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
+}
+
+/* loader */
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background-color: white; /* Arkaplan rengi sayfa yüklenene kadar beyaz */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    animation: bounce 1s infinite;
+}
+
+.bun,
+.patty {
+    width: 100%;
+    height: 10px;
+    background-color: #cc3423; /* Kırmızı ton */
+    border-radius: 5px;
+}
+
+.bun.top {
+    background-color: #e74c3c; /* Üst ekmek rengi */
+}
+
+.bun.bottom {
+    background-color: #e74c3c; /* Alt ekmek rengi */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+body.loaded #loader {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+}
+
+/* scroll to top bölümü */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(190, 100, 100, 0.58);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block; /* Her zaman görünür */
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: #e74c3c; /* Hover rengini istediğiniz gibi ayarlayabilirsiniz */
 }
 
 

@@ -84,3 +84,58 @@ document.addEventListener('DOMContentLoaded', function() {
         slider.style.transform = 'translateX(0%)';
     }
 });
+
+//loader
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.body.classList.add('loaded');
+    }, 1000); // 3 saniye (3000 milisaniye)
+});
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.body.classList.add('loaded');
+    }, 1000); // 1.5 saniye (1500 milisaniye)
+});
+
+
+//deneme kod
+document.querySelectorAll('.menu a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Varsayılan tıklama davranışını engelle
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const offset = 70; // Üstteki sabit menü yüksekliği kadar ayarlayın
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+//restoran adına basınca yukarı kaydırma
+document.getElementById('restoranAdi').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Yumuşak kaydırma efekti için
+    });
+});
+
+//yukkarı ok tuşum
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Butona tıklayınca sayfanın en üstüne kaydır
+scrollToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Yumuşak kaydırma efekti için
+    });
+});
