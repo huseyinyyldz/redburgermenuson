@@ -150,3 +150,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Sayfa kaydırıldığında kart renginin değişmesi için:

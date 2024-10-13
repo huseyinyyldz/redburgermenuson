@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Adı</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- loader kısmı -->
+    <div id="loader" class="loader">
+        <div class="burger">
+            <div class="bun top"></div>
+            <div class="patty"></div>
+            <div class="bun bottom"></div>
+        </div>
+    </div>
+    <!-- scrool to top -->
+    <div id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <header>
+        <div class="restoran-adi" id="restoranAdi">Red Burger</div>
+        <div class="menu-toggle" id="menuToggle">Menü</div>
+    </header>
+
+    <aside class="menu-bar" id="menuBar">
+        <nav>
+            <ul id="menu" class="menu">
+                <li><a href="#kategori1">RED CHICK (TAVUK) BURGERLER</a></li>
+                <li><a href="#kategori2">RED MEAT (ET ) BURGERLER</a></li>
+                <li><a href="#kategori3">ROLL(DÜRÜM) MENÜLER</a></li>
+                <li><a href="#kategori4">BASKET (SEPET) MENÜLER</a></li>
+                <li><a href="#kategori5">MEGA STİCK BUCKET MENÜ</a></li>
+                <li><a href="#kategori6">SEPETİNİ OLUŞTUR</a></li>
+                <li><a href="#kategori7">MAKARNA MENÜLERİ</a></li>
+                <li><a href="#kategori8">SOSLAR</a></li>
+                <li><a href="#kategori9">EXTRA</a></li>
+                <li><a href="#kategori10">TATLILAR</a></li>
+                <li><a href="#kategori11">KAHVELER</a></li>
+                <li><a href="#kategori12">ÇAYLAR</a></li>
+                <li><a href="#kategori13">MEŞRUBATLAR</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="slider-wrapper">
+        <div class="slider" id="imageSlider">
+            <div class="slide">
+                <img src="../burgerler/1.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+        
+            <div class="slide">
+                <img src="../burgerler/2.jpg" alt="Ürün 1">
+                <div class="slide-title"> Burger 2</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/3.jpg" alt="Ürün 1">
+                <div class="slide-title"> Burger 3</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/4.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger 4</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/5.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger 5</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/6.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/7.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/8.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/9.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/10.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/11.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/12.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/13.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/14.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/15.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            <div class="slide">
+                <img src="../burgerler/16.jpg" alt="Ürün 1">
+                <div class="slide-title">Chickball Burger</div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <main>
+
+        <section id="kategori13" class="kategori">
+            <h2>Meşrubatlar</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 330 ml Kutu İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 330 ml Şişe İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> Sarıyer/Didi 330 ml Kutu İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 200 ml Şişe İçecek Çeşitleri</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> Ayran</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> Litrelik</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 300 ml El Yapımı Soğuk Limonata</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../yan-ürünler/10.jpg" alt="Ürün 1" class="card-img">
+                    <div class="content">
+                        <h3> 500 ml Pet Su</h3>
+                        <p></p>
+                        <p class="fiyat">Fiyat ₺</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <!-- Daha fazla kart -->
+            </div>
+        </section>
+        <!-- Diğer kategoriler -->
+    </main>
+    <main>
+        <h2>Diğer Kategoriler</h2>
+        <!-- 1. Kategori Kartı - Et Burgerler -->
+      <a href="et-burger.html" class="category-card" id="category1">
+        <h3>RED MEAT (ET ) BURGERLER</h3>
+        <img src="../yan-ürünler/1.jpg" alt="Et Burgerler" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+
+      <!-- 2. Kategori Kartı - Tavuk Burgerler -->
+      <a href="tavuk-burger.html" class="category-card" id="category2">
+        <h3>RED CHICK (TAVUK) BURGERLER</h3>
+        <img src="../yan-ürünler/2.jpg" alt="Tavuk Burgerler" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+
+      <!-- 3. Kategori Kartı - Vegan Burgerler -->
+      <a href="dürüm-menü.html" class="category-card" id="category3">
+        <h3>ROLL(DÜRÜM) MENÜLER</h3>
+        <img src="../yan-ürünler/3.jpg" alt="Vegan Burgerler" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+
+      <!-- 4. Kategori Kartı - Roll Menü -->
+      <a href="basket-sepet.html" class="category-card" id="category4">
+        <h3>BASKET (SEPET) MENÜLER</h3>
+        <img src="../yan-ürünler/4.jpg" alt="Roll Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="mega-stick-bucket.html" class="category-card" id="category5">
+        <h3>MEGA STİCK BUCKET MENÜ</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="makarna-menü.html" class="category-card" id="category5">
+        <h3>MAKARNA MENÜLERİ</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="sepeti-create.html" class="category-card" id="category5">
+        <h3>SEPETİNİ OLUŞTUR</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="soslar.html" class="category-card" id="category5">
+        <h3>SOSLAR</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="extralar.html" class="category-card" id="category5">
+        <h3>EXTRA</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="tatlilar.html" class="category-card" id="category5">
+        <h3>TATLILAR</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="kahveler.html" class="category-card" id="category5">
+        <h3>KAHVELER</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      <a href="caylar.html" class="category-card" id="category5">
+        <h3>ÇAYLAR</h3>
+        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
+        <p>Tüm ürünleri görmek için tıklayınız</p>
+      </a>
+      <!-- 5. Kategori Kartı - Mega Menü -->
+      
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Şirket Hakkında</h3>
+                <p>Restoranımız, 2024 yılından bu yana en kaliteli ürünleri sunmaktadır. Misyonumuz, müşterilerimize en iyi lezzet deneyimini yaşatmak.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>İletişim</h3>
+
+                <p><a href="https://www.instagram.com/red_burger58/"><i class="fa-brands fa-instagram"></i> İnstagram</a></p>
+                <p><i class="fas fa-envelope"></i> info@restoran.com</p>
+                <p><i class="fas fa-phone-alt"></i> 12:00-23:00 Sipariş: 0532 015 03 58</p>
+                <p><i class="fas fa-map-marker-alt"></i> Hoca Ahmet Yesevi Cad. No:18, Sivas, Türkiye</p>
+            </div>
+            <div class="footer-section copyright">
+                <p>&copy; Red Burger. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- FontAwesome için -->
+    <script src="../script/script.js"></script>
+</body>
+</html>
