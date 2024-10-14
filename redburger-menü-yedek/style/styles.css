@@ -58,6 +58,7 @@ header {
     margin: 20px 0;
     border-bottom:1px solid #2c3e50;
     padding-bottom: 10px;
+    
 }
 
 .menu a {
@@ -65,6 +66,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+
 }
 
 .menu a:hover {
@@ -457,8 +459,8 @@ body.loaded #loader {
 
 .category-card h3 {
     margin-top: 15px;
-    font-size: 20px;
-    color: #2c3e50;
+    font-size: 22px;
+    color: #222;
     font-weight: 600;
 }
 
@@ -476,7 +478,7 @@ body.loaded #loader {
 
 .category-card p {
     margin: 15px 0;
-    color: #007bff;
+    color: #535d65;
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -501,3 +503,100 @@ header > div > a{
     text-decoration: none;
     color: #eee;
 }
+
+/* menü accordion hale */
+.accordion-checkbox {
+    display: none; /* Hide the actual checkbox */
+  }
+  
+  .accordion-item label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #e74c3c;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 17px;
+  }
+  
+  .accordion-item label:hover {
+    background-color: #c0392b;
+  }
+  
+  .submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  /* When the checkbox is checked, show the submenu and rotate the arrow */
+  .accordion-checkbox:checked + label + .submenu {
+    display: block;
+  }
+  
+  .accordion-checkbox:checked + label .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+
+  /* menü bar taşma durumunu engelleme */
+  
+.menu-bar {
+    overflow-y: scroll; /* Dikey kaydırma sürekli açık */
+    max-height: 100vh; /* Menü barın en fazla ekran yüksekliği kadar büyümesini sağlıyoruz */
+    scrollbar-width: thin ; /* İnce scrollbar */
+  }
+  
+  /* Scrollbar her zaman gözükür ve açık bir renkte olur */
+  .menu-bar::-webkit-scrollbar {
+    width: 12px; /* Scrollbar genişliğini arttırdık */
+    background-color: #f0f0f0; /* Scrollbar arka plan rengini daha açık yaptık */
+  }
+  
+  .menu-bar::-webkit-scrollbar-thumb {
+    background-color: #d3d3d3; /* Scrollbar rengini daha açık bir tona getirdik */
+    border-radius: 10px; /* Daha yuvarlak köşeler */
+    border: 2px solid #f0f0f0; /* Thumb çevresine bir boşluk ekleyerek daha görünür yaptık */
+  }
+  
+  /* Responsive durumda menü açıldıkça genişleyecek ve taşma durumunda scrollbar eklenecek */
+  /* Responsive durumda menü açıldıkça genişleyecek ve taşma durumunda scrollbar eklenecek */
+@media (max-width: 768px) {
+    .menu-bar {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      max-height: 70vh; /* Menü maksimum ekranın %70'i kadar büyüsün */
+      overflow-y: scroll; /* Scrollbar her zaman aktif olacak */
+      scrollbar-width: thin;
+    }
+  
+    /* Scrollbar her zaman gözükür ve açık bir renkte olur */
+    .menu-bar::-webkit-scrollbar {
+      width: 12px; /* Scrollbar genişliğini arttırdık */
+      background-color: #f0f0f0; /* Scrollbar arka plan rengini daha açık yaptık */
+    }
+  
+    .menu-bar::-webkit-scrollbar-thumb {
+      background-color: #d3d3d3; /* Scrollbar rengini daha açık bir tona getirdik */
+      border-radius: 10px; /* Daha yuvarlak köşeler */
+      border: 2px solid #f0f0f0; /* Thumb çevresine bir boşluk ekleyerek daha görünür yaptık */
+    }
+  
+    .menu-bar.dropdown {
+      display: block;
+      max-height: 70vh; /* Menü açıldıkça max %70 ekran boyutunda kalacak */
+      overflow-y: scroll; /* Scrollbar her zaman aktif olacak */
+    }
+  }
+  
+  

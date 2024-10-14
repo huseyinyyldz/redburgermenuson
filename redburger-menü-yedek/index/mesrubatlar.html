@@ -27,29 +27,53 @@
     </div>
     
     <header>
-        <div class="restoran-adi" id="restoranAdi">Red Burger</div>
+        <div class="restoran-adi" id="restoranAdi"><a href="menü-son.html">Red Burger</a></div>
         <div class="menu-toggle" id="menuToggle">Menü</div>
     </header>
 
     <aside class="menu-bar" id="menuBar">
         <nav>
-            <ul id="menu" class="menu">
-                <li><a href="#kategori1">RED CHICK (TAVUK) BURGERLER</a></li>
-                <li><a href="#kategori2">RED MEAT (ET ) BURGERLER</a></li>
-                <li><a href="#kategori3">ROLL(DÜRÜM) MENÜLER</a></li>
-                <li><a href="#kategori4">BASKET (SEPET) MENÜLER</a></li>
-                <li><a href="#kategori5">MEGA STİCK BUCKET MENÜ</a></li>
-                <li><a href="#kategori6">SEPETİNİ OLUŞTUR</a></li>
-                <li><a href="#kategori7">MAKARNA MENÜLERİ</a></li>
-                <li><a href="#kategori8">SOSLAR</a></li>
-                <li><a href="#kategori9">EXTRA</a></li>
-                <li><a href="#kategori10">TATLILAR</a></li>
-                <li><a href="#kategori11">KAHVELER</a></li>
-                <li><a href="#kategori12">ÇAYLAR</a></li>
-                <li><a href="#kategori13">MEŞRUBATLAR</a></li>
-            </ul>
+          <ul id="menu" class="menu">
+            <li class="accordion-item">
+              <input type="checkbox" id="burgerToggle" class="accordion-checkbox">
+              <label for="burgerToggle">Burgerler <span class="arrow">▼</span></label>
+              <ul class="submenu">
+                <li><a href="tavuk-burger.html">RED CHICK (TAVUK) BURGERLER</a></li>
+                <li><a href="et-burger.html">RED MEAT (ET) BURGERLER</a></li>
+                <li><a href="dürüm-menü.html">Roll (Dürüm) Menüler</a></li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <input type="checkbox" id="sepetsToggle" class="accordion-checkbox">
+              <label for="sepetsToggle">Sepet Menüler <span class="arrow">▼</span></label>
+              <ul class="submenu">
+                <li><a href="basket-sepet.html">Basket (Sepet) Menüler</a></li>
+                <li><a href="mega-stick-bucket.html">Mega Stick Bucket Menü</a></li>
+                <li><a href="sepeti-create.html">Sepetini Oluştur</a></li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <input type="checkbox" id="extrasToggle" class="accordion-checkbox">
+              <label for="extrasToggle">Soslar & Extralar <span class="arrow">▼</span></label>
+              <ul class="submenu">
+                <li><a href="makarna-menü.html">Makarna Menüleri</a></li>
+                <li><a href="soslar.html">Soslar</a></li>
+                <li><a href="extralar.html">Extralar</a></li>
+                <li><a href="tatlilar.html">Tatlılar</a></li>
+              </ul>
+            </li>
+            <li class="accordion-item">
+              <input type="checkbox" id="drinksToggle" class="accordion-checkbox">
+              <label for="drinksToggle">İçecek <span class="arrow">▼</span></label>
+              <ul class="submenu">
+                <li><a href="caylar.html">Çaylar</a></li>
+                <li><a href="kahveler.html">Kahveler</a></li>
+                <li><a href="mesrubatlar.html">Meşrubatlar</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-    </aside>
+      </aside>
     <div class="slider-wrapper">
         <div class="slider" id="imageSlider">
             <div class="slide">

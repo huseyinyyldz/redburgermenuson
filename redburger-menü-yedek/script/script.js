@@ -151,4 +151,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Sayfa kaydırıldığında kart renginin değişmesi için:
+// accordion hale getirmek
+
+
+// Prevent menu from closing when category is clicked
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.stopPropagation();  // Stops menu toggle from closing when clicking a category
+    });
+});
+
+//son deneme
+document.querySelectorAll('.submenu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Ensure link works by allowing default action (navigation)
+        const targetHref = this.getAttribute('href');
+        window.location.href = targetHref;
+    });
+});
+
