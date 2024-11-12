@@ -75,7 +75,7 @@ header {
 
 main {
     margin-left: 220px;
-    padding: 80px 20px;
+    padding: 30px 20px;
 }
 
 .kategori {
@@ -276,70 +276,219 @@ footer {
 
 .slide-title {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 30px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
 }
 
-/* loader */
+/* Modern Loader Stili */
 .loader {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10000;
-    background-color: white; /* Arkaplan rengi sayfa yüklenene kadar beyaz */
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
+    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
 }
 
 .burger {
-    width: 60px;
-    height: 60px;
+    position: relative;
+    width: 180px;
+    height: 150px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    animation: bounce 1s infinite;
+    animation: float 2.5s ease-in-out infinite;
 }
 
-.bun,
-.patty {
-    width: 100%;
-    height: 10px;
-    background-color: #cc3423; /* Kırmızı ton */
-    border-radius: 5px;
+.burger::after {
+    content: "Yükleniyor...";
+    position: absolute;
+    bottom: -50px;
+    color: #cc3423;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(204, 52, 35, 0.5);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.bun, .patty, .lettuce, .cheese, .tomato, .onion {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .bun.top {
-    background-color: #e74c3c; /* Üst ekmek rengi */
+    top: 0;
+    width: 140px;
+    height: 60px;
+    background: linear-gradient(45deg, #ffb347, #ffcc33);
+    border-radius: 140px 140px 30px 30px;
+    transform-origin: center;
+    animation: bunTopBounce 2s infinite;
 }
 
 .bun.bottom {
-    background-color: #e74c3c; /* Alt ekmek rengi */
+    bottom: 0;
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(45deg, #ffb347, #ffcc33);
+    border-radius: 30px 30px 100px 100px;
+    animation: bunBottomBounce 2s infinite;
 }
 
-@keyframes bounce {
+.lettuce {
+    top: 40%;
+    width: 150px;
+    height: 15px;
+    background: linear-gradient(90deg, #32cd32, #98fb98);
+    z-index: 2;
+    border-radius: 5px;
+    animation: ingredientWave 2s infinite;
+}
+
+.cheese {
+    top: 50%;
+    width: 130px;
+    height: 12px;
+    background: linear-gradient(90deg, #ffd700, #ffa500);
+    z-index: 3;
+    animation: ingredientSlide 2s infinite;
+}
+
+.tomato {
+    top: 55%;
+    width: 120px;
+    height: 10px;
+    background: linear-gradient(90deg, #ff6b6b, #cc3423);
+    z-index: 4;
+    animation: ingredientWave 2s infinite 0.2s;
+}
+
+.onion {
+    top: 60%;
+    width: 140px;
+    height: 8px;
+    background: linear-gradient(90deg, #f0f0f0, #d3d3d3);
+    z-index: 5;
+    animation: ingredientSlide 2s infinite 0.3s;
+}
+
+.patty {
+    top: 45%;
+    width: 160px;
+    height: 40px;
+    background: linear-gradient(45deg, #8b4513, #654321);
+    z-index: 1;
+    border-radius: 20px;
+    animation: pattyBounce 2s infinite;
+}
+
+@keyframes float {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(0deg);
     }
     50% {
-        transform: translateY(-8px);
+        transform: translateY(-20px) rotate(3deg);
     }
 }
 
-body.loaded #loader {
+@keyframes bunTopBounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+@keyframes bunBottomBounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(5px);
+    }
+}
+
+@keyframes pattyBounce {
+    0%, 100% {
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.1);
+    }
+}
+
+@keyframes ingredientWave {
+    0%, 100% {
+        transform: translateX(-50%) skewX(0deg);
+    }
+    50% {
+        transform: translateX(-50%) skewX(-10deg);
+    }
+}
+
+@keyframes ingredientSlide {
+    0%, 100% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-40%);
+        opacity: 0.8;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(0.95);
+    }
+}
+
+body.loaded .loader {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease;
+    transition: all 0.8s ease-out;
+}
+
+/* Loader için parlama efekti */
+.burger::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(204, 52, 35, 0.2) 0%, transparent 70%);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
 }
 
 /* scroll to top bölümü */
@@ -431,73 +580,218 @@ body.loaded #loader {
 
 /* slider taşmasını önlemek */
 
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .category-card {
-    width: 320px;
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ffffff, #f8f8f8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
     text-decoration: none;
-    color: #333;
-    margin: auto;
-    margin-bottom: 15px;
+    border: 1px solid rgba(231, 76, 60, 0.1);
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(231, 76, 60, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .category-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(231, 76, 60, 0.15);
 }
 
-/* .category-card.scroll-change {
-    background-color: #faf7f7; /* Hafif kırmızı tonu */
+.category-card:hover::before {
+    opacity: 1;
+}
 
-.category-card h3 {
-    margin-top: 15px;
-    font-size: 22px;
-    color: #222;
+.category-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-content h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin: 0;
+    text-align: center;
     font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-.category-card img {
+.category-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: #e74c3c;
+    transition: width 0.3s ease;
+}
+
+.category-card:hover .category-content h3::after {
+    width: 80px;
+}
+
+.category-content img {
     width: 100%;
-    height: 220px;
+    height: 180px;
     object-fit: cover;
-    transition: opacity 0.3s ease;
-    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.category-card img:hover {
-    opacity: 0.9;
+.category-card:hover .category-content img {
+    transform: scale(1.05);
 }
 
-.category-card p {
-    margin: 15px 0;
-    color: #535d65;
-    font-size: 16px;
+.category-cta {
+    color: #e74c3c;
+    font-size: 0.95rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    text-align: center;
+    padding: 8px 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.category-card p:hover {
-    color: #0056b3;
+.category-cta::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e74c3c;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .category-card {
-        width: 90%;
-        margin: auto;
-        margin-bottom: 15px;
-        text-align: center;
+.category-card:hover .category-cta::before {
+    transform: translateX(0);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1200px) {
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 10px;
     }
 }
 
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+        padding: 8px;
+    }
+
+    .category-content {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .category-content h3 {
+        font-size: 1.2rem;
+        padding-bottom: 8px;
+    }
+
+    .category-content img {
+        height: 160px;
+    }
+
+    .category-cta {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .category-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .category-content img {
+        height: 200px;
+    }
+}
+
+/* Ek Süslemeler ve Efektler */
+.category-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 100%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.category-card:hover::after {
+    transform: translateX(100%);
+}
+
+/* Kart İçeriği İçin Gölge Efekti */
+.category-content {
+    position: relative;
+    z-index: 1;
+}
+
+.category-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.8) 0%,
+        transparent 80%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.category-card:hover .category-content::before {
+    opacity: 1;
+}
 
 header > div > a{
     text-decoration: none;
@@ -545,7 +839,6 @@ header > div > a{
     transition: transform 0.3s ease;
   }
   
-
   /* menü bar taşma durumunu engelleme */
   
 .menu-bar {
@@ -567,7 +860,7 @@ header > div > a{
   }
   
   /* Responsive durumda menü açıldıkça genişleyecek ve taşma durumunda scrollbar eklenecek */
-  /* Responsive durumda menü açıldıkça genişleyecek ve taşma durumunda scrollbar eklenecek */
+  /* Responsive durumda menü açldıkça genişleyecek ve taşma durumunda scrollbar eklenecek */
 @media (max-width: 768px) {
     .menu-bar {
       position: fixed;
@@ -598,5 +891,128 @@ header > div > a{
       overflow-y: scroll; /* Scrollbar her zaman aktif olacak */
     }
   }
+  
+  /* Slider Gezinme Butonları - Güncellenen Stil */
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgb(56, 54, 54); /* slider nav button rengi normalde beyaz*/
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  
+  .slider-nav:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .prev-btn {
+    left: 20px;
+  }
+  
+  .next-btn {
+    right: 20px;
+  }
+  
+  /* Dot Göstergeleri - Güncellenen Stil */
+  .slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    z-index: 2;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+  }
+  
+  .dot.active {
+    background: white;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Mobil Uyumluluk */
+  @media (max-width: 768px) {
+    .slider-nav {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    
+    .slider-dots {
+        padding: 5px 10px;
+        gap: 8px;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+  }
+  
+  
+.restoran-adi i {
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.menu-toggle i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+/* Mobil görünüm için ayarlamalar */
+@media (max-width: 768px) {
+    .restoran-adi i {
+        font-size: 20px;
+    }
+    
+    .menu-toggle i {
+        font-size: 16px;
+    }
+}
   
   

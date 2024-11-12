@@ -13,138 +13,152 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- loader kısmı -->
-    <div id="loader" class="loader">
-        <div class="burger">
-            <div class="bun top"></div>
-            <div class="patty"></div>
-            <div class="bun bottom"></div>
-        </div>
-    </div>
+   <!-- loader kısmı -->
+<div id="loader" class="loader">
+  <div class="burger">
+      <div class="bun top"></div>
+      <div class="lettuce"></div>
+      <div class="cheese"></div>
+      <div class="tomato"></div>
+      <div class="onion"></div>
+      <div class="patty"></div>
+      <div class="bun bottom"></div>
+  </div>
+</div>
     <!-- scrool to top -->
     <div id="scrollToTop" class="scroll-to-top">
         <i class="fas fa-arrow-up"></i>
     </div>
     
+    
     <header>
-      <div class="restoran-adi" id="restoranAdi"><a href="menü-son.html">Red Burger</a></div>
-        <div class="menu-toggle" id="menuToggle">Menü</div>
+      <div class="restoran-adi" id="restoranAdi">
+        <i class="fas fa-hamburger"></i> <a href="menü-son.html">Red Burger</a> 
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i> Menü
+      </div>
     </header>
 
     <aside class="menu-bar" id="menuBar">
-        <nav>
-          <ul id="menu" class="menu">
-            <li class="accordion-item">
-              <input type="checkbox" id="burgerToggle" class="accordion-checkbox">
-              <label for="burgerToggle">Burgerler <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="tavuk-burger.html">RED CHICK (TAVUK) BURGERLER</a></li>
-                <li><a href="et-burger.html">RED MEAT (ET) BURGERLER</a></li>
-                <li><a href="dürüm-menü.html">Roll (Dürüm) Menüler</a></li>
-              </ul>
-            </li>
-            <li class="accordion-item">
-              <input type="checkbox" id="sepetsToggle" class="accordion-checkbox">
-              <label for="sepetsToggle">Sepet Menüler <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="basket-sepet.html">Basket (Sepet) Menüler</a></li>
-                <li><a href="mega-stick-bucket.html">Mega Stick Bucket Menü</a></li>
-                <li><a href="sepeti-create.html">Sepetini Oluştur</a></li>
-              </ul>
-            </li>
-            <li class="accordion-item">
-              <input type="checkbox" id="extrasToggle" class="accordion-checkbox">
-              <label for="extrasToggle">Soslar & Extralar <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="makarna-menü.html">Makarna Menüleri</a></li>
-                <li><a href="soslar.html">Soslar</a></li>
-                <li><a href="extralar.html">Extralar</a></li>
-                <li><a href="tatlilar.html">Tatlılar</a></li>
-              </ul>
-            </li>
-            <li class="accordion-item">
-              <input type="checkbox" id="drinksToggle" class="accordion-checkbox">
-              <label for="drinksToggle">İçecek <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="caylar.html">Çaylar</a></li>
-                <li><a href="kahveler.html">Kahveler</a></li>
-                <li><a href="mesrubatlar.html">Meşrubatlar</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </aside>
+      <nav>
+        <ul id="menu" class="menu">
+          <li class="accordion-item">
+            <input type="checkbox" id="burgerToggle" class="accordion-checkbox">
+            <label for="burgerToggle">Burgerler <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="tavuk-burger.html">RED CHICK (TAVUK) BURGERLER</a></li>
+              <li><a href="et-burger.html">RED MEAT (ET) BURGERLER</a></li>
+              <li><a href="dürüm-menü.html">Roll (Dürüm) Menüler</a></li>
+            </ul>
+          </li>
+          <li class="accordion-item">
+            <input type="checkbox" id="sepetsToggle" class="accordion-checkbox">
+            <label for="sepetsToggle">Sepet Menüler <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="basket-sepet.html">Basket (Sepet) Menüler</a></li>
+              <li><a href="mega-stick-bucket.html">Mega Stick Bucket Menü</a></li>
+              <li><a href="sepeti-create.html">Sepetini Oluştur</a></li>
+            </ul>
+          </li>
+          <li class="accordion-item">
+            <input type="checkbox" id="extrasToggle" class="accordion-checkbox">
+            <label for="extrasToggle">Soslar & Extralar <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="makarna-menü.html">Makarna Menüleri</a></li>
+              <li><a href="soslar.html">Soslar</a></li>
+              <li><a href="extralar.html">Extralar</a></li>
+              <li><a href="tatlilar.html">Tatlılar</a></li>
+            </ul>
+          </li>
+          <li class="accordion-item">
+            <input type="checkbox" id="drinksToggle" class="accordion-checkbox">
+            <label for="drinksToggle">İçecek <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="caylar.html">Çaylar</a></li>
+              <li><a href="kahveler.html">Kahveler</a></li>
+              <li><a href="mesrubatlar.html">Meşrubatlar</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
     <div class="slider-wrapper">
-        <div class="slider" id="imageSlider">
-            <div class="slide">
-                <img src="../burgerler/1.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-        
-            <div class="slide">
-                <img src="../burgerler/2.jpg" alt="Ürün 1">
-                <div class="slide-title"> Burger 2</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/3.jpg" alt="Ürün 1">
-                <div class="slide-title"> Burger 3</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/4.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger 4</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/5.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger 5</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/6.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/7.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/8.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/9.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/10.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/11.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/12.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/13.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/14.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/15.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/16.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            
+      <div class="slider" id="imageSlider">
+        <div class="slide">
+          <img src="../burgerler/1.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
         </div>
+
+        <div class="slide">
+          <img src="../burgerler/2.jpg" alt="Ürün 1" />
+          <div class="slide-title">Burger 2</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/3.jpg" alt="Ürün 1" />
+          <div class="slide-title">Burger 3</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/4.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger 4</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/5.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger 5</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/6.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/7.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/8.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/9.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/10.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/11.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/12.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/13.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/14.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/15.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/16.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+      </div>
+      
+      <!-- Gezinme butonları -->
+      <button class="slider-nav prev-btn">❮</button>
+      <button class="slider-nav next-btn">❯</button>
+      
+      <!-- Dot göstergeleri -->
+      <div class="slider-dots"></div>
     </div>
-    
     
     
     
@@ -179,85 +193,128 @@
         <!-- Diğer kategoriler -->
     </main>
     <main>
-        <h2>Diğer Kategoriler</h2>
-        <!-- 1. Kategori Kartı - Et Burgerler -->
-      <a href="et-burger.html" class="category-card" id="category1">
-        <h3>RED MEAT (ET ) BURGERLER</h3>
-        <img src="../yan-ürünler/1.jpg" alt="Et Burgerler" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
+      <section class="category-grid">
+        <section class="category-grid">
+          <div class="category-grid-title">
+            <h2>Diğer Menüler</h2>
+          </div>
+        <!-- Et Burgerler -->
+        <a href="et-burger.html" class="category-card">
+          <div class="category-content">
+            <h3>RED MEAT (ET) BURGERLER</h3>
+            <img src="../yan-ürünler/1.jpg" alt="Et Burgerler" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
 
-      <!-- 2. Kategori Kartı - Tavuk Burgerler -->
-      <a href="tavuk-burger.html" class="category-card" id="category2">
-        <h3>RED CHICK (TAVUK) BURGERLER</h3>
-        <img src="../yan-ürünler/2.jpg" alt="Tavuk Burgerler" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
+        <!-- Tavuk Burgerler -->
+        <a href="tavuk-burger.html" class="category-card">
+          <div class="category-content">
+            <h3>RED CHICK (TAVUK) BURGERLER</h3>
+            <img src="../yan-ürünler/2.jpg" alt="Tavuk Burgerler" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
 
-      <!-- 3. Kategori Kartı - Vegan Burgerler -->
-      
+        <!-- Dürüm Menüler -->
+        <a href="dürüm-menü.html" class="category-card">
+          <div class="category-content">
+            <h3>ROLL (DÜRÜM) MENÜLER</h3>
+            <img src="../yan-ürünler/3.jpg" alt="Dürüm Menüler" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
 
-      <!-- 4. Kategori Kartı - Roll Menü -->
-      <a href="basket-sepet.html" class="category-card" id="category4">
-        <h3>BASKET (SEPET) MENÜLER</h3>
-        <img src="../yan-ürünler/4.jpg" alt="Roll Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
+        <!-- Sepet Menüler -->
+        <a href="basket-sepet.html" class="category-card">
+          <div class="category-content">
+            <h3>BASKET (SEPET) MENÜLER</h3>
+            <img src="../yan-ürünler/4.jpg" alt="Sepet Menüler" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
 
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="mega-stick-bucket.html" class="category-card" id="category5">
-        <h3>MEGA STİCK BUCKET MENÜ</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="makarna-menü.html" class="category-card" id="category5">
-        <h3>MAKARNA MENÜLERİ</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="sepeti-create.html" class="category-card" id="category5">
-        <h3>SEPETİNİ OLUŞTUR</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="soslar.html" class="category-card" id="category5">
-        <h3>SOSLAR</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="extralar.html" class="category-card" id="category5">
-        <h3>EXTRA</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="tatlilar.html" class="category-card" id="category5">
-        <h3>TATLILAR</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="kahveler.html" class="category-card" id="category5">
-        <h3>KAHVELER</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="caylar.html" class="category-card" id="category5">
-        <h3>ÇAYLAR</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
-      <!-- 5. Kategori Kartı - Mega Menü -->
-      <a href="mesrubatlar.html" class="category-card" id="category5">
-        <h3>MEŞRUBATLAR</h3>
-        <img src="../yan-ürünler/5.jpg" alt="Mega Menü" />
-        <p>Tüm ürünleri görmek için tıklayınız</p>
-      </a>
+        <!-- Mega Stick Bucket Menü -->
+        <a href="mega-stick-bucket.html" class="category-card">
+          <div class="category-content">
+            <h3>MEGA STİCK BUCKET MENÜ</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Mega Stick Bucket" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Makarna Menüleri -->
+        <a href="makarna-menü.html" class="category-card">
+          <div class="category-content">
+            <h3>MAKARNA MENÜLERİ</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Makarna Menüleri" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Sepetini Oluştur -->
+        <a href="sepeti-create.html" class="category-card">
+          <div class="category-content">
+            <h3>SEPETİNİ OLUŞTUR</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Sepetini Oluştur" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Soslar -->
+        <a href="soslar.html" class="category-card">
+          <div class="category-content">
+            <h3>SOSLAR</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Soslar" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Extra -->
+        <a href="extralar.html" class="category-card">
+          <div class="category-content">
+            <h3>EXTRA</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Extra" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Tatlılar -->
+        <a href="tatlilar.html" class="category-card">
+          <div class="category-content">
+            <h3>TATLILAR</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Tatlılar" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Kahveler -->
+        <a href="kahveler.html" class="category-card">
+          <div class="category-content">
+            <h3>KAHVELER</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Kahveler" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Çaylar -->
+        <a href="caylar.html" class="category-card">
+          <div class="category-content">
+            <h3>ÇAYLAR</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Çaylar" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+
+        <!-- Meşrubatlar -->
+        <a href="mesrubatlar.html" class="category-card">
+          <div class="category-content">
+            <h3>MEŞRUBATLAR</h3>
+            <img src="../yan-ürünler/5.jpg" alt="Meşrubatlar" />
+            <p class="category-cta">Tüm ürünleri görmek için tıklayınız</p>
+          </div>
+        </a>
+      </section>
     </main>
 
     <footer>

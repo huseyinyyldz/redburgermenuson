@@ -68,36 +68,118 @@ let currentIndex = 0;
 const slides = document.querySelectorAll('.slider .slide');
 const totalSlides = slides.length;
 const slider = document.getElementById('imageSlider');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const dotsContainer = document.querySelector('.slider-dots');
 
-function showNextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides; // Bir sonraki slide'a geç
-    const offset = -currentIndex * 100; // Kaydırma oranı (% cinsinden)
-    slider.style.transform = `translateX(${offset}%)`;
+// Dot göstergelerini oluştur
+function createDots() {
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    }
 }
 
-// 3 saniyede bir otomatik geçiş için zamanlayıcı
-setInterval(showNextSlide, 3000);
+// Slide'ı güncelle
+function updateSlide() {
+    const offset = -currentIndex * 100;
+    slider.style.transform = `translateX(${offset}%)`;
+    
+    // Dot'ları güncelle
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
 
-// Sayfa yüklendiğinde ilk slide'ı göstermek için
-document.addEventListener('DOMContentLoaded', function() {
-    if (slides.length > 0) {
-        slider.style.transform = 'translateX(0%)';
-    }
+// Belirli bir slide'a git
+function goToSlide(index) {
+    currentIndex = index;
+    updateSlide();
+}
+
+// Sonraki slide'a git
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlide();
+}
+
+// Önceki slide'a git
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlide();
+}
+
+// Event listener'ları ekle
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+// Otomatik geçiş için zamanlayıcı
+let slideInterval = setInterval(nextSlide, 5000);
+
+// Mouse slider üzerine geldiğinde otomatik geçişi durdur
+slider.addEventListener('mouseenter', () => {
+    clearInterval(slideInterval);
+});
+
+// Mouse slider'dan ayrıldığında otomatik geçişi tekrar başlat
+slider.addEventListener('mouseleave', () => {
+    slideInterval = setInterval(nextSlide, 5000);
+});
+
+// Sayfa yüklendiğinde dot'ları oluştur
+document.addEventListener('DOMContentLoaded', () => {
+    createDots();
+    updateSlide();
 });
 
 //loader
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        document.body.classList.add('loaded');
-    }, 1000); // 3 saniye (3000 milisaniye)
-});
+document.addEventListener('DOMContentLoaded', function() {
+    // Tüm resimlerin yüklenmesini bekleyelim
+    const images = document.querySelectorAll('img');
+    let loadedImages = 0;
+    
+    function imageLoaded() {
+        loadedImages++;
+        if (loadedImages === images.length) {
+            // Tüm resimler yüklendikten sonra loader'ı kaldır
+            setTimeout(() => {
+                const loader = document.getElementById('loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                        document.body.classList.add('loaded');
+                    }, 500);
+                }
+            }, 1000);
+        }
+    }
 
-window.addEventListener('load', function() {
-    setTimeout(function() {
-        document.body.classList.add('loaded');
-    }, 1000); // 1.5 saniye (1500 milisaniye)
-});
+    // Her resim için yüklenme kontrolü
+    images.forEach(img => {
+        if (img.complete) {
+            imageLoaded();
+        } else {
+            img.addEventListener('load', imageLoaded);
+            img.addEventListener('error', imageLoaded); // Hata durumunda da devam et
+        }
+    });
 
+    // Maksimum bekleme süresi (5 saniye)
+    setTimeout(() => {
+        const loader = document.getElementById('loader');
+        if (loader && !document.body.classList.contains('loaded')) {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+                document.body.classList.add('loaded');
+            }, 500);
+        }
+    }, 5000);
+});
 
 //deneme kod
 document.querySelectorAll('.menu a').forEach(anchor => {
