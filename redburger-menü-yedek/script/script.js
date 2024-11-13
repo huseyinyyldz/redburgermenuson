@@ -27,13 +27,14 @@ const backdrop = document.createElement('div');
 backdrop.className = 'modal-backdrop';
 document.body.appendChild(backdrop);
 
-// Kartlardaki fotoğrafların üzerine tıklama olayını ekleme
-document.querySelectorAll('.card-img').forEach(img => {
-    img.addEventListener('click', function () {
-        // Kart içeriğindeki ürün adı, açıklama ve fiyat bilgilerini alma
-        const productName = img.closest('.card').querySelector('h3').textContent;
-        const productDescription = img.closest('.card').querySelector('p').textContent;
-        const productPrice = img.closest('.card').querySelector('.fiyat').textContent;
+// Kartların tamamına tıklama olayını ekleme
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function () {
+        // Kart içeriğindeki bilgileri alma
+        const img = card.querySelector('.card-img');
+        const productName = card.querySelector('h3').textContent;
+        const productDescription = card.querySelector('p').textContent;
+        const productPrice = card.querySelector('.fiyat').textContent;
 
         // Modal içeriğini ayarlama
         const modalContent = `

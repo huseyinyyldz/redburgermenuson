@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- loader kısmı -->
+   <!-- loader kısmı -->
 <div id="loader" class="loader">
   <div class="burger">
       <div class="bun top"></div>
@@ -30,123 +30,134 @@
         <i class="fas fa-arrow-up"></i>
     </div>
     
+    
     <header>
-      <div class="restoran-adi" id="restoranAdi"><a href="menü-son.html">Red Burger</a></div>
-        <div class="menu-toggle" id="menuToggle">Menü</div>
+      <div class="restoran-adi" id="restoranAdi">
+        <i class="fas fa-hamburger"></i> <a href="menü-son.html">Red Burger</a>
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i> Menü
+      </div>
     </header>
 
     <aside class="menu-bar" id="menuBar">
-        <nav>
-          <ul id="menu" class="menu">
-            <li class="accordion-item">
-              <input type="checkbox" id="burgerToggle" class="accordion-checkbox">
-              <label for="burgerToggle">Burgerler <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="tavuk-burger.html">RED CHICK (TAVUK) BURGERLER</a></li>
-                <li><a href="et-burger.html">RED MEAT (ET) BURGERLER</a></li>
-                <li><a href="dürüm-menü.html">Roll (Dürüm) Menüler</a></li>
-              </ul>
-            </li>
-            <li class="accordion-item">
-              <input type="checkbox" id="sepetsToggle" class="accordion-checkbox">
-              <label for="sepetsToggle">Sepet Menüler <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="basket-sepet.html">Basket (Sepet) Menüler</a></li>
-                <li><a href="mega-stick-bucket.html">Mega Stick Bucket Menü</a></li>
-                <li><a href="sepeti-create.html">Sepetini Oluştur</a></li>
-              </ul>
-            </li>
-            <li class="accordion-item">
-              <input type="checkbox" id="extrasToggle" class="accordion-checkbox">
-              <label for="extrasToggle">Soslar & Extralar <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="makarna-menü.html">Makarna Menüleri</a></li>
-                <li><a href="soslar.html">Soslar</a></li>
-                <li><a href="extralar.html">Extralar</a></li>
-                <li><a href="tatlilar.html">Tatlılar</a></li>
-              </ul>
-            </li>
-            <li class="accordion-item">
-              <input type="checkbox" id="drinksToggle" class="accordion-checkbox">
-              <label for="drinksToggle">İçecek <span class="arrow">▼</span></label>
-              <ul class="submenu">
-                <li><a href="caylar.html">Çaylar</a></li>
-                <li><a href="kahveler.html">Kahveler</a></li>
-                <li><a href="mesrubatlar.html">Meşrubatlar</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </aside>
+      <nav>
+        <ul id="menu" class="menu">
+          <li class="accordion-item">
+            <input type="checkbox" id="burgerToggle" class="accordion-checkbox">
+            <label for="burgerToggle">Burgerler <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="tavuk-burger.html">RED CHICK (TAVUK) BURGERLER</a></li>
+              <li><a href="et-burger.html">RED MEAT (ET) BURGERLER</a></li>
+              <li><a href="dürüm-menü.html">Roll (Dürüm) Menüler</a></li>
+            </ul>
+          </li>
+          <li class="accordion-item">
+            <input type="checkbox" id="sepetsToggle" class="accordion-checkbox">
+            <label for="sepetsToggle">Sepet Menüler <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="basket-sepet.html">Basket (Sepet) Menüler</a></li>
+              <li><a href="mega-stick-bucket.html">Mega Stick Bucket Menü</a></li>
+              <li><a href="sepeti-create.html">Sepetini Oluştur</a></li>
+            </ul>
+          </li>
+          <li class="accordion-item">
+            <input type="checkbox" id="extrasToggle" class="accordion-checkbox">
+            <label for="extrasToggle">Soslar & Extralar <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="makarna-menü.html">Makarna Menüleri</a></li>
+              <li><a href="soslar.html">Soslar</a></li>
+              <li><a href="extralar.html">Extralar</a></li>
+              <li><a href="tatlilar.html">Tatlılar</a></li>
+            </ul>
+          </li>
+          <li class="accordion-item">
+            <input type="checkbox" id="drinksToggle" class="accordion-checkbox">
+            <label for="drinksToggle">İçecek <span class="arrow">▼</span></label>
+            <ul class="submenu">
+              <li><a href="caylar.html">Çaylar</a></li>
+              <li><a href="kahveler.html">Kahveler</a></li>
+              <li><a href="mesrubatlar.html">Meşrubatlar</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
     <div class="slider-wrapper">
-        <div class="slider" id="imageSlider">
-            <div class="slide">
-                <img src="../burgerler/1.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-        
-            <div class="slide">
-                <img src="../burgerler/2.jpg" alt="Ürün 1">
-                <div class="slide-title"> Burger 2</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/3.jpg" alt="Ürün 1">
-                <div class="slide-title"> Burger 3</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/4.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger 4</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/5.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger 5</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/6.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/7.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/8.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/9.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/10.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/11.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/12.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/13.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/14.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/15.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            <div class="slide">
-                <img src="../burgerler/16.jpg" alt="Ürün 1">
-                <div class="slide-title">Chickball Burger</div>
-            </div>
-            
+      <div class="slider" id="imageSlider">
+        <div class="slide">
+          <img src="../burgerler/1.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
         </div>
+
+        <div class="slide">
+          <img src="../burgerler/2.jpg" alt="Ürün 1" />
+          <div class="slide-title">Burger 2</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/3.jpg" alt="Ürün 1" />
+          <div class="slide-title">Burger 3</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/4.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger 4</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/5.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger 5</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/6.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/7.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/8.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/9.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/10.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/11.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/12.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/13.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/14.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/15.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+        <div class="slide">
+          <img src="../burgerler/16.jpg" alt="Ürün 1" />
+          <div class="slide-title">Chickball Burger</div>
+        </div>
+      </div>
+      
+      <!-- Gezinme butonları -->
+      <button class="slider-nav prev-btn">❮</button>
+      <button class="slider-nav next-btn">❯</button>
+      
+      <!-- Dot göstergeleri -->
+      <div class="slider-dots"></div>
     </div>
     
     
@@ -154,41 +165,63 @@
     
 
     <main>
-       
-        
-        <section id="kategori5" class="kategori">
-            <h2>MEGA STİCK BUCKET MENÜ</h2>
+        <section id="kategori1" class="kategori">
+            <h2>Mega Stick Bucket</h2>
             <div class="card-container">
                 <div class="card">
-                    <img src="../yan-ürünler/1.jpg" alt="Ürün 1" class="card-img">
+                    <img src="../burgerler/1.jpg" alt="Ürün 1" class="card-img">
                     <div class="content">
-                        <h3>Mega Stick Bucket Menü</h3>
-                        <p>Menü 2-3 kişiliktir. 15 adet kemiksiz chicken stick (470 gr.), 2 adet tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
-                        <p class="fiyat">439 ₺</p>
+                        <h3>Chickball Burger</h3>
+                        <p>Burger(120 gr. Tavuk kıymasıyla yapılmış özel köftesi, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">169 ₺</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../yan-ürünler/2.jpg" alt="Ürün 1" class="card-img">
+                    <img src="../burgerler/2.jpg" alt="Ürün 2" class="card-img">
                     <div class="content">
-                        <h3>Mega But Bucket Menü</h3>
-                        <p>Menü 2-3 kişiliktir. 15 adet kemikli kök kanat but (850 gr.), 2 adet tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
-                        <p class="fiyat">445 ₺</p>
+                        <h3>Red Chick Mix Special</h3>
+                        <p>Classic Red Chick Burger, 3 adet kemiksiz chicken stick (100 gr.), 150 gr., 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">249 ₺</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../yan-ürünler/3.jpg" alt="Ürün 1" class="card-img">
+                    <img src="../burgerler/3.jpg" alt="Ürün 3" class="card-img">
                     <div class="content">
-                        <h3>Mega Wing Bucket Menü</h3>
-                        <p>Menü 2-3 kişiliktir. 15 adet kemikli uç kanat (400 gr.), 2 adet tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
-                        <p class="fiyat">449 ₺</p>
+                        <h3>Red Chick Classic</h3>
+                        <p>Burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">219 ₺</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../yan-ürünler/4.jpg" alt="Ürün 1" class="card-img">
+                    <img src="../burgerler/4.jpg" alt="Ürün 4" class="card-img">
                     <div class="content">
-                        <h3>Mıx Bucket Menü</h3>
-                        <p>2-3 kişiliktir. 5 adet kemiksiz chicken stick, 5 adet kemikli kök kanat but, 5 adet kemikli uç kanat(600 gr.) 2 adert tandır lavaşı, 400 gr. Özel baharatlı patates kızartması, stick sos seti</p>
-                        <p class="fiyat">459 ₺</p>
+                        <h3>BBQ Chick Classic</h3>
+                        <p>Barbekü soslu burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, bbq sos, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">225 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/5.jpg" alt="Ürün 5" class="card-img">
+                    <div class="content">
+                        <h3>Sweet Chick Classic</h3>
+                        <p>Sweet chili soslu burger (110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, sweet chili sos,red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">225 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/6.jpg" alt="Hot Chick Classic" class="card-img">
+                    <div class="content">
+                        <h3>Hot Chick Classic</h3>
+                        <p>Acılı burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, acı sos, red burger sos), 150 gr. özel baharatlı patates kızartması, stick sos seti</p>
+                        <p class="fiyat">215 ₺</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../burgerler/7.jpg" alt="Cheese Chick Classic" class="card-img">
+                    <div class="content">
+                        <h3>Cheese Chick Classic</h3>
+                        <p>Peynirli burger(110 gr. Cajun baharatlı tavuk, ıceberg, domates, turşu, mayonez, kaşar peyniri, red burger sos), 150 gr. Özel baharatlı patates kızartması, stick sos set</p>
+                        <p class="fiyat">235 ₺</p>
                     </div>
                 </div>
                 
@@ -201,6 +234,10 @@
     </main>
     <main>
       <section class="category-grid">
+        <section class="category-grid">
+          <div class="category-grid-title">
+            <h2>Diğer Menüler</h2>
+          </div>
         <!-- Et Burgerler -->
         <a href="et-burger.html" class="category-card">
           <div class="category-content">
